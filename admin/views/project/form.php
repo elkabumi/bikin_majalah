@@ -36,13 +36,14 @@
                                 <div class="box-body">
                                     
                                      
-                                        <div class="col-md-12">
                                         
+                                        <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Nama Project</label>
                                             <input required type="text" name="i_name" class="form-control" placeholder="Masukkan nama ..." value="<?= $row->project_name ?>"  title="Nama Tidak boleh kosong"/>
                                         </div>
-										
+										</div>
+                                                 <div class="col-md-6">
 										<div class="form-group">
                                             <label>Tanggal Realisasi</label>
                                             <div class="input-group">
@@ -51,8 +52,11 @@
 												</div>
 													<input type="text"  class="form-control pull-right" id="date_picker1" name="i_realisasi_date" value="<?=$row->b_realisasi_tgl?>" />
                                             </div>
+             
                                         </div>
+ </div>
  
+ <div class="col-md-12">
                                         <div class="form-group">
                                             <label>Keterangan</label>
                                              <textarea class="form-control" name="i_description" rows="3" placeholder="Masukkan keterangan ..."><?= $row->project_desc ?></textarea>
