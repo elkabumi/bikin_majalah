@@ -49,7 +49,9 @@
                                         </div>
                                         <?php if($id != ''){?>
                                         <img src="../../img/slider/<?=$row->slider_photo?>"  width="150" height="150"/>
-                                        <? } ?>
+                                        <? } else{
+										
+										}?>
                                         <div class="form-group">
                                          <label>Images</label>
                                            <input type="file" name="i_img" id="i_img" />
