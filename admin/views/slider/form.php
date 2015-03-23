@@ -43,10 +43,11 @@
                                             <input required type="text" name="i_name" class="form-control" placeholder="Masukkan nama ..." value="<?= $row->slider_name ?>"  title="Nama Tidak boleh kosong"/>
                                         </div>
  
-                                          <div class="form-group">
+                                         <div class="form-group">
                                             <label>Keterangan</label>
                                              <textarea class="form-control" name="i_description" rows="3" placeholder="Masukkan keterangan ..."><?= $row->slider_desc ?></textarea>
                                         </div>
+										
                                         <?php if($id != ''){?>
                                         <img src="../../img/slider/<?=$row->slider_photo?>"  width="150" height="150"/>
                                         <? } else{
