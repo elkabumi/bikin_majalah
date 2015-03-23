@@ -64,7 +64,11 @@ include'lib/link_active.php';
 			
         }
     }
+<<<<<<< HEAD
           $page = (isset($_GET['page'])) ? $_GET['page'] : null;
+=======
+          
+>>>>>>> 2d7bab9fa733c1381807171b5263ff90f2bb0f99
 						  if($page){
 							  try{
 						  	MyInclude('page/'.$page.".php");
