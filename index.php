@@ -65,8 +65,6 @@ $page = (isset($_GET['page'])) ? $_GET['page'] : null;
         }
     }
           
-		  
-		$page = $_GET['page'];
 						  if($page){
 							  try{
 						  	MyInclude('page/'.$page.".php");
