@@ -1,7 +1,7 @@
 
 <?
 include'lib/link_active.php';
-$page = (isset($_GET['page'])) ? $_GET['page'] : null;
+
 ?>
 
 <!DOCTYPE HTML>
@@ -64,7 +64,11 @@ $page = (isset($_GET['page'])) ? $_GET['page'] : null;
 			
         }
     }
+<<<<<<< HEAD
+          $page = (isset($_GET['page'])) ? $_GET['page'] : null;
+=======
           
+>>>>>>> 2d7bab9fa733c1381807171b5263ff90f2bb0f99
 						  if($page){
 							  try{
 						  	MyInclude('page/'.$page.".php");
