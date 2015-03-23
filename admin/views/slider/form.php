@@ -46,6 +46,9 @@
                                          <div class="form-group">
                                             <label>Keterangan</label>
                                              <textarea class="form-control" name="i_description" rows="3" placeholder="Masukkan keterangan ..."><?= $row->slider_desc ?></textarea>
+                                    <textarea id="editor1" name="editor1" rows="10" cols="80">
+                                            This is my textarea to be replaced with CKEditor.
+                                        </textarea>
                                         </div>
 										
                                         <?php if($id != ''){?>
