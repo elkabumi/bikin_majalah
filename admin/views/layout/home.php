@@ -53,7 +53,7 @@
                              
                                 <div class="box-body2 table-responsive" style="padding:20px; text-align:center;">
                                    <h2>Selamat Datang</h2>
-                                  <h4> Di Sistem Management Petani</h4>
+                                  <h4> Di Menu Admin Page bikinmajalah.com</h4>
 
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
