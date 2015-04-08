@@ -57,8 +57,7 @@
                                             <tr>
                                             <th width="5%">No</th>
                                                 <th>Nama</th>
-                                                <th>Keterangan</th>
-                                                
+                                          
                                                 <th>Foto</th>
                                                   <th>Config</th>
                                                   
@@ -73,7 +72,6 @@
                                             <td><?= $no?></td>
                                                
                                                 <td><?= $row['project_name']?></td>
-                                                <td><?= $row['project_desc']?></td>
                                                 <td><img src="../../img/project/<?= $row['project_photo']?>" width="100" height="100" /></td>
                                                
                                               <td style="text-align:center;">

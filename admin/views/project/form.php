@@ -37,30 +37,20 @@
                                     
                                      
                                         
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                         <div class="form-group">
                                             <label>Nama Project</label>
                                             <input required type="text" name="i_name" class="form-control" placeholder="Masukkan nama ..." value="<?= $row->project_name ?>"  title="Nama Tidak boleh kosong"/>
                                         </div>
 										</div>
-                                                 <div class="col-md-6">
-										<div class="form-group">
-                                            <label>Tanggal Realisasi</label>
-                                            <div class="input-group">
-                                                <div class="input-group-addon">
-                                                    <i class="fa fa-calendar"></i>
-												</div>
-													<input type="text"  class="form-control pull-right" id="date_picker1" name="i_realisasi_date" value="<?=$row->b_realisasi_tgl?>" />
-                                            </div>
-             
-                                        </div>
- </div>
- 
- <div class="col-md-12">
+                                      
+ 								
+ 										<div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Keterangan</label>
-                                             <textarea class="form-control" name="i_description" rows="3" placeholder="Masukkan keterangan ..."><?= $row->project_desc ?></textarea>
-                                        </div>
+                                         <label>Keterangan</label>
+                                        <textarea id="editor1" name="i_desc" rows="10" cols="80">
+                                           <?=$row->project_desc?>
+                                        </textarea> </div>
 										
                                         <?php if($id != ''){?>
                                         <img src="../../img/project/<?=$row->project_photo?>"  width="150" height="150"/>
@@ -85,3 +75,17 @@
                         </div><!--/.col (right) -->
                     </div>   <!-- /.row -->
                 </section><!-- /.content -->
+                	<script src="../js/plugins/ckeditor/ckeditor.js" type="text/javascript"></script>
+        <!-- Bootstrap WYSIHTML5 -->
+        <script src="../js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
+        
+		<script type="text/javascript">
+            $(function() {
+                // Replace the <textarea id="editor1"> with a CKEditor
+                // instance, using default configuration.
+                CKEDITOR.replace('editor1');
+                //bootstrap WYSIHTML5 - text editor
+                $(".textarea").wysihtml5();
+            });
+        </script>
+     

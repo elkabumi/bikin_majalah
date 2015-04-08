@@ -31,9 +31,9 @@ include'lib/link_active.php';
 				</div>
 				</div>
 				<div class="search_box">
-				<form>
+				<!--<form>
 				   <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
-			    </form>
+			    </form>-->
 			</div>
 			<div class="clear"></div> 
 	    </div>
@@ -42,12 +42,13 @@ include'lib/link_active.php';
 		 <div class="wrap"> 
 			 <div id='cssmenu'>
 				<ul>
-				   <li <?php if(isset($_SESSION['menu_active']) && $_SESSION['menu_active'] == 1){?> class="active" <?php } ?>><a href='index.php?page=home'><span>Home</span></a></li>
-				  
+				   	<li <?php if(isset($_SESSION['menu_active']) && $_SESSION['menu_active'] == 1){?> class="active" <?php } ?>><a href='index.php?page=home'><span>Home</span></a></li>
+				  	<li <?php if(isset($_SESSION['menu_active']) && $_SESSION['menu_active'] == 3){?> class="active" <?php } ?>><a href='index.php?page=about'><span>Tentang Kami</span></a></li>
+				 	<li <?php if(isset($_SESSION['menu_active']) && $_SESSION['menu_active'] == 5){?> class="active" <?php } ?>><a href='index.php?page=why_magazine'><span>Why Magazine ?</span></a></li>
 				
-				    <li <?php if(isset($_SESSION['menu_active']) && $_SESSION['menu_active'] == 2){?> class="active" <?php } ?>><a href='index.php?page=project'><span>Project</span></a></li>
-					 <li <?php if(isset($_SESSION['menu_active']) && $_SESSION['menu_active'] == 3){?> class="active" <?php } ?>><a href='index.php?page=about'><span>About</span></a></li>
-				   <li <?php if(isset($_SESSION['menu_active']) && $_SESSION['menu_active'] == 4){?> class="active" <?php } ?>><a href='index.php?page=contact'><span>Contact</span></a></li>
+				    <li <?php if(isset($_SESSION['menu_active']) && $_SESSION['menu_active'] == 2){?> class="active" <?php } ?>><a href='index.php?page=project'><span>Klien Kami</span></a></li>
+						 
+				  	 <li <?php if(isset($_SESSION['menu_active']) && $_SESSION['menu_active'] == 4){?> class="active" <?php } ?>><a href='index.php?page=contact'><span>Kontak</span></a></li>
 				    <div class="clear"></div> 
 				</ul>
 			  </div>

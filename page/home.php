@@ -2,7 +2,7 @@
 Author: W3layout
 Author URL: http://w3layouts.com
 
-      <!------ Slider ------------
+      <!------ Slider ------------>
 		  <div class="slider">
 		  	<div class="wrap">
 	      	 <div class="slider-wrapper theme-default">

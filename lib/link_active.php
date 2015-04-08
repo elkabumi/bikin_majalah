@@ -20,6 +20,9 @@ $page = (isset($_GET['page'])) ? $_GET['page'] : "home";
 	case 'contact':
 		$_SESSION['menu_active'] = 4;
 	break;
+	case 'why_magazine':
+		$_SESSION['menu_active'] = 5;
+	break;
 }
 
 ?>

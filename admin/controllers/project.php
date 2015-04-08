@@ -59,7 +59,7 @@ switch ($page) {
 
 		extract($_POST);
 		$i_name = get_isset($i_name);
-		$i_description = get_isset($i_description);
+		$i_desc = get_isset($i_desc);
 		$date =date('Y-m-d');
 		
 		$path2 = "../../img/project/";
@@ -69,7 +69,7 @@ switch ($page) {
 		$data = "'', 
 					'$i_name', 
 					'$date$i_img', 
-					'$i_description'
+					'$i_desc'
 			";
 			
 			//echo $data;
