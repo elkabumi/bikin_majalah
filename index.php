@@ -1,7 +1,6 @@
-
 <?
 include'lib/link_active.php';
-
+include'lib/config.php';
 ?>
 
 <!DOCTYPE HTML>
@@ -21,6 +20,15 @@ include'lib/link_active.php';
         $('#slider').nivoSlider();
     });
     </script>
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>	
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="web/css/jquery.fancybox.css" media="screen" />
+<script type="text/javascript">
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+
+		});
+</script>
 </head>
 <body>
 <div class="header">	

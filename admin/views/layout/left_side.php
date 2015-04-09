@@ -38,18 +38,15 @@
                             </a>
                             <ul class="treeview-menu">
           
-                                <li><a href="slider.php?page=list"><i class="fa fa-chevron-circle-right"></i>Slider</a></li>
-                                <li><a href="project.php?page=list"><i class="fa fa-chevron-circle-right"></i>Project</a></li>
-                                
-                                <li><a href="about.php?page=list"><i class="fa fa-chevron-circle-right"></i>About</a></li>
-                               
-                               
+                               <li><a href="project.php?page=list"><i class="fa fa-chevron-circle-right"></i>Klien Kami</a></li>
+                           	<li><a href="gallery.php?page=list"><i class="fa fa-chevron-circle-right"></i>Gallery Majalah</a></li>
+                           
                              	
                             </ul>
                   </li>
                   
                    <li <?php if(isset($_SESSION['menu_active']) && $_SESSION['menu_active'] ==2){ echo "class='active'"; } ?>>
-                            <a href="treatment.php">
+                            <a href="comment.php?page=list"">
                                 <i class="fa fa-comment"></i>
                                 <span>Komentar</span>
                                

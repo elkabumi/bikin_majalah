@@ -49,34 +49,31 @@ Author URL: http://w3layouts.com
                     <p>Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl. <br>Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. <br>Aliquam dapibus tincidunt metus</p>
                 </div>
            		<div class="section group">
-				<div class="col_1_of_4 span_1_of_4">
+				<?php
+				$query_gallery=mysql_query("SELECT * FROM gallery");
+				while($row_gallery=mysql_fetch_object($query_gallery)){
+					if($row_gallery->gallery_photo != ''){
+				?>
+                <div class="col_1_of_4 span_1_of_4">
+                  
 					<div class="homeBox">
 						<div class="one_fourth">	
-							<div class="boxImage"><img src="images/pic1.jpg" alt=""/></div>	
+                        
+                            
+                            <a class="fancybox" href="img/gallery/<?=$row_gallery->gallery_photo?>" data-fancybox-group="gallery" title="<?=$row_gallery->gallery_name?>">
+					
+                            
+							<div class="boxImage">
+                            		<img src="img/gallery/<?=$row_gallery->gallery_photo?>" alt=""/></div>	
+                            <span> </span></a>
 						</div>
+                        
 					</div>
+                    
 				</div>
-				<div class="col_1_of_4 span_1_of_4">
-					<div class="homeBox">
-						<div class="one_fourth">	
-							<div class="boxImage"><img src="images/pic2.jpg" alt=""/></div>	
-						</div>
-					</div>
-				</div>
-				<div class="col_1_of_4 span_1_of_4">
-					<div class="homeBox">
-						<div class="one_fourth">	
-							<div class="boxImage"><img src="images/pic3.jpg" alt=""/></div>	
-						</div>
-					</div>
-				</div>
-				<div class="col_1_of_4 span_1_of_4">
-					<div class="homeBox">
-						<div class="one_fourth">	
-							<div class="boxImage"><img src="images/pic4.jpg" alt=""/></div>	
-						</div>
-					</div>
-				</div>
+				<?php 
+					}
+				} ?>
 				<div class="clear"></div> 
 			</div> 
 			</div>

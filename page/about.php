@@ -44,14 +44,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="lsidebar span_1_of_3">
 					      <h3>Testimonials</h3>
 						  <ul class="about-list1">
-	                            <li>
-	                                <p>Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Morbi nunc odio, gravida at, cursus..</p>
-	                                <a href="#">- Lorem ipsum dolor</a>
+	                          
+                              <?php 
+							  	$q_testimonial = mysql_query("SELECT * FROM comment WHERE comment_type  ='1'");
+								while($r_testimonial = mysql_fetch_object($q_testimonial)){
+							  ?>
+                                <li>
+                               		<p style="color:#FF6801; font-weight:bold;"><?=$r_testimonial->comment_name?></p>
+	                                <p>
+                                    <?=$r_testimonial->comment_subject ?>
+                                    </p>
+	                                
 	                            </li>
-	                            <li>
-	                                <p>Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Morbi nunc odio, gravida at, cursus..</p>
-	                                <a href="#">- Lorem ipsum dolor</a>
-	                            </li>
+	                         <?php } ?>
                             </ul>
 					    </div>
 					<div class="cont span_2_of_3">

@@ -39,21 +39,17 @@
                                         
                                         <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Nama Project</label>
-                                            <input required type="text" name="i_name" class="form-control" placeholder="Masukkan nama ..." value="<?= $row->project_name ?>"  title="Nama Tidak boleh kosong"/>
+                                            <label>Nama Majalah</label>
+                                            <input required type="text" name="i_name" class="form-control" placeholder="Masukkan nama ..." value="<?= $row->gallery_name ?>"  title="Nama Tidak boleh kosong"/>
                                         </div>
 										</div>
                                       
  								
  										<div class="col-md-12">
-                                        <div class="form-group">
-                                         <label>Keterangan</label>
-                                        <textarea id="editor1" name="i_desc" rows="10" cols="80">
-                                           <?=$row->project_desc?>
-                                        </textarea> </div>
+                                      
 										
                                         <?php if($id != ''){?>
-                                        <img src="../../img/project/<?=$row->project_photo?>"  class="img-responsive"/>
+                                        <img src="../../img/gallery/<?=$row->gallery_photo 	?>" class="img-responsive"/>
                                         <? } ?>
                                         <div class="form-group">
                                          <label>Images</label>

@@ -7,19 +7,27 @@
 				<div class="section group">
 				 <div class="col span_2_of_contact">
 				  <div class="contact-form">
+                  		<?php
+                        if(isset($_GET['did'])  and $_GET['did'] == '1'){
+                        ?>
+                        <div style="color:#FF6E06">
+                       	<b>Terima kasih</b>
+                        Komentar Telah Terkirim
+                        </div>
+                  	  <?php } ?>
 				  	<h3>Contact Us</h3>
-					    <form method="post" action="contact-post.html">
+					    <form method="post" action="index.php?page=proses_comment">
 					    	<div>
 						    	<span><label>Name</label></span>
-						    	<span><input name="userName" type="text" class="textbox"></span>
+						    	<span><input name="i_name" type="text" class="textbox"></span>
 						    </div>
 						    <div>
 						    	<span><label>E-Mail</label></span>
-						    	<span><input name="userEmail" type="text" class="textbox"></span>
+						    	<span><input name="i_email" type="text" class="textbox"></span>
 						    </div>
 						    <div>
 						    	<span><label>Subject</label></span>
-						    	<span><textarea name="userMsg"> </textarea></span>
+						    	<span><textarea name="i_subject"> </textarea></span>
 						    </div>
 						   <div>
 						   		<span><input type="submit" value="Submit"></span>

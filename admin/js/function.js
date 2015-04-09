@@ -5,6 +5,21 @@ function confirm_delete(id,control){
 	}
 }
 
+function confirm_tampil(id,control){
+	var a = confirm("Anda yakin ingin menampilkan komentar ini?");
+	if(a==true){
+		window.location.href = control+id;
+	}
+}
+
+function confirm_hide(id,control){
+	var a = confirm("Anda yakin tidak ingin mmanampilkan komentar ini?");
+	if(a==true){
+		window.location.href = control+id;
+	}
+}
+
+
 function confirm_onprogress(id,control){
 	var a = confirm("Anda yakin ingin memproses data ini?");
 	if(a==true){
